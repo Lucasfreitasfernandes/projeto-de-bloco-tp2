@@ -1,0 +1,66 @@
+
+
+.h2 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: "Roboto", system-ui;
+    margin-left: 4rem;
+}
+
+.container-card-top10 {
+    width: 280px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.container-card-top10 {
+    color: #1e1e1b;
+    cursor: pointer;
+}
+
+.container-card-top10:hover {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.imagem-top10 {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.item-favoritos-top10 {
+    color: yellow
+}
+
+.favorito-top10 {
+    color: red
+}
+
+.container-funcao-top10 {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    margin-top: 1rem;
+}
+
+.container-coracao-top10 {
+    margin-right: 20px;
+}
+
+.container-estrelas-top10 {
+    margin-left: 20px;
+}
+
+.top10 {
+    margin-left: 2rem;
+}
+
+.top10-home {
+    display: flex;
+}
+
+.container-home-top10 {
+    margin-top: 7rem;
+}

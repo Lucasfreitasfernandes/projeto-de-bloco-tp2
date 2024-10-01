@@ -1,0 +1,28 @@
+.container-barra-display {
+    display: flex;
+    justify-content: center;
+}
+
+
+.container-barra-busca {
+    background-color: #23232e;
+    margin-top: 5rem;
+    height: 40px;
+    width: 500px;
+    border-radius: 7px;
+    display: flex;
+}
+
+.icon-busca{
+    color: white;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+.input-busca {
+    border: none;
+    width: 90%;
+    height: 90%;
+    border-radius: 7px;
+}

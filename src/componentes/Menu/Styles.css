@@ -1,0 +1,105 @@
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 10px;
+    font-family: "Roboto", system-ui;
+    position: relative;
+
+}
+
+.lista-nav {
+     display: flex;
+     gap: 1rem;
+     list-style: none;
+     font-size: 18px;
+     margin-right: 10px;
+}
+
+.lista-nav li {
+    letter-spacing: 3px;
+    color: white;
+    margin-left: 32px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.lista-nav li:hover {
+    background-color: gray;
+    border-radius: 5px;
+}
+
+
+.lista-nav.menu-aberto {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    gap: 1rem;
+}
+
+.menu-nome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.nome-menu {
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.menu-icon {
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.lista-categorias {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    list-style: none;
+    gap: 1rem;
+    width: 500px;
+
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+.lista-categorias li {
+    letter-spacing: 3px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.lista-categorias li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.lista-categorias.show {
+    opacity: 1;
+    height: auto; /* A altura ajusta automaticamente conforme o conteúdo */
+}
+
+@media (max-width: 768px) {
+    .lista-nav {
+        flex-direction: column;
+    }
+}
